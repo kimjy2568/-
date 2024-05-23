@@ -232,7 +232,12 @@ timetables = {
 }
 
 # Streamlit 앱 제목 설정
-st.title("낙동고등학교 시간표")
+col1, col2 = st.columns([1, 0.4])
+with col1:
+    st.title("낙동고등학교 시간표")
+with col2:
+    st.image("낙동고 로고.png", width=200, use_column_width=False)
+
 
 # 학년과 반 선택 상자를 한 줄에 배치
 col1, col2 = st.columns(2)
