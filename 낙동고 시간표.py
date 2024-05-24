@@ -231,6 +231,7 @@ timetables = {
     }
 }
 
+# Streamlit 앱 제목 설정
 col1, col2 = st.columns([1, 0.4])
 with col1:
     st.title("낙동고등학교 시간표")
